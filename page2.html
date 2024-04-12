@@ -9,23 +9,37 @@
 
 	<style>
 		body {
-			background-color: powderblue;
+			background-image: url(https://img.freepik.com/free-vector/watercolor-background_87374-69.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
 			display: flex;
 			text-align: center;
 			justify-content: center;
 		}
+
+		#Thai {
+			font-size: 40px;
+		}
 	</style>
 
-	<title>Dollar</title>
+	<title>Baht</title>
 
 </head>
 <body>
 	<div>
-		<div>
-			<img src="https://static.vecteezy.com/system/resources/previews/024/043/961/non_2x/money-clipart-transparent-background-free-png.png" style="width: 250px;">
+		<div class="mt-5 mb-3">
+			<img src="https://33.media.tumblr.com/e04f8aa335be5eeab0a0dfd317f04f7c/tumblr_nig1owKqZA1sjegsuo1_500.gif" alt="flying money gif" style="width: 250px;">
 		</div>
-		<div class="mb-4">
-			<p class="h1" style="text-align: center;">The equivalent amount of 100 pesos in Dollar is <br><kbd>1.77</kbd>.</p>
+		<div id="Thai" class="mb-4">
+			<p>The equivalent amount of 100 pesos in Baht is</p>
+			<p id="Baht"></p>
+				<script>
+				let x = 100; // 100 is the amount of peso to be converted to Yen
+				let y = 0.64; // Peso to Baht is 1 is to 0.64
+				let z = x * y;
+				document.getElementById("Baht").innerHTML= + z;
+			</script>
 		</div>
 		<div>
 			<a href="index.html"><button type="button" class="btn btn-success btn-lg">Back to Home Page</button></a>
